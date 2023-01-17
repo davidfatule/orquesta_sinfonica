@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orquesta Sinfonica ASC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>Orquesta Sinfonica ASC</h1>
+
+            <nav class="navegacion-principal">
+                <a class="nav-item" href="#lineup">Line Up</a>
+                <a class="nav-item" href="#galeria">Galeria</a>
+                <a class="nav-item" href="#boletos">Boletos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Orq. Sinfonica ASC Vzla. </h2>
+                <p>Inaugurada en Enero 2023, Vzla, Maracaibo.</p>
+            </div>
+        </div>
+        <video autoplay muted loop> <!-- controls se utiliza para agregar los controles -->
+            <source src="video/orquesta2.mp4" type="video/mp4">
+            <source src="video/sinfonicavideo.ogg" type="video/ogg">
+        </video>
+    </div>
+
+    <section class="contenedor sobre-sinfonica">
+        <div class="imagen">
+            <picture>
+                <source srcset="src/img/celloo.jpg" type="image/jpg">
+                <source srcset="src/img/celloo.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/cello3.jpg" alt="imagen de cello 3">
+            </picture>
+
+            <picture>
+                <source srcset="" type="image/avif">
+            </picture>
+        </div>
+        <div class="contenido-sinfonica">
+            <h2>Sobre Nosotros</h2>
+            <p class="fecha">Inaugurada y Certificada Vzla, Maracaibo.</p>
+            <p>Mi nombre es Andrea Sánchez, Cellista del Sistema del Orquestas de Venezuela desde los 11 años y
+                pertenezco a la
+                Orquesta Sinfónica ASC.</p>
+            <p>La orquesta esta compuesta por diversos instrumentos de viento, madera, metal y percusión, que cada uno
+                aporta una
+                melodía especifica que permite ensamblar las piezas clásicas elegidas por el director de orquesta.</p>
+        </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="dia">ASC Sinfonica Presenta Viernes 21</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario cello bg-crema">
+                <p class="nombre-escenario">Escenario de Cello</p>
+
+                <ul class="calendario">
+                    <li>
+                        17:00 | <span>Concerto in E Minor, Op. 85: I. Adagio- Moderato</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Elégie in C Minor, Op. 24</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Unaccompanied Cello Suite No. 1 in G major, BWV 1007: III. Courante</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Chopin: Perlude No. 4 in E Minor, Op. 28 No.4</span>
+                    </li>
+                    <li>
+                        21:00 | <span>Concerto in E Minor, Op. 85: II. lento- Allegro molto</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Concerto in E Minor, Op. 85 III. Adagio</span>
+                    </li>
+
+                </ul>
+            </div> <!-- .escenario -->
+
+            <div class="escenario violin bg-marron">
+                <p class="nombre-escenario">Escenario de Violin</p>
+
+                <ul class="calendario">
+                    <li>
+                        17:30 | <span>Mazurkas, Op. 67: Mazurka No. 4 in A Minor</span>
+                    </li>
+                    <li>
+                        18:30 | <span>21 Hungarian Dances, WoO 1: VI Dance in D-Flat Major. Vivace</span>
+                    </li>
+                    <li>
+                        19:30 | <span>Morceaux, Op. 10: No. 2, Humoresque in G Major. Menuet</span>
+                    </li>
+                    <li>
+                        20:30 | <span>Träumerei, Op.21</span>
+                    </li>
+                    <li>
+                        21:30 | <span>Salut d’amour, Op.12</span>
+                    </li>
+                    <li>
+                        22:30 | <span>Concerto for 2 Violins, Strings and Continuo in D Minor BWV 1043: Mozart sinfonia</span>
+                    </li>
+
+                </ul>
+            </div> <!-- .escenario -->
+
+
+        </div> <!-- .escenarios-contenedor -->
+
+
+        <p class="dia">ASC Sinfonica Presenta Sabado 22</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario cello bg-marron">
+                <p class="nombre-escenario">Escenario de Cello</p>
+
+                <ul class="calendario">
+                    <li>
+                        17:00 | <span>Haydn: Concerti No. 1 in C major, Hob. VIIb:1: I. Moderato</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Dovarák, Concerto in B Minir. Op. 104, B. 191: I. Allegro</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Concerto: III. Lento</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Rachmaninov: Sonata in G minor, Op. 19: II. Allegro scherzando</span>
+                    </li>
+                    <li>
+                        21:00 | <span>Chopin: Sonata in G minor, Op. 65: II. Sherzo. Allegro con brio</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Chopin: Sonata in G minor, Op. 65: IV. Finale. Allegro</span>
+                    </li>
+
+                </ul>
+            </div> <!-- .escenario -->
+
+            <div class="escenario violin bg-crema">
+                <p class="nombre-escenario">Escenario de Violin</p>
+
+                <ul class="calendario">
+                    <li>
+                        17:30 | <span>Sinfonia concertante in E-Flat Major, K. 364: I. Allegro maestoso</span>
+                    </li>
+                    <li>
+                        18:30 | <span>Concerto in A Minor for Violin and Cello Op. 102: III. Vivance non troppo</span>
+                    </li>
+                    <li>
+                        19:30 | <span>Paganini, Violín Concerto No.2 in B Minor, Op. 7</span>
+                    </li>
+                    <li>
+                        20:30 | <span>Paganini: 24 Caprices, Op. 1:No. 24 in A Minor</span>
+                    </li>
+                    <li>
+                        21:30 | <span>Paganini: 24 Caprices, Op. 1: No. 11 in C Major</span>
+                    </li>
+                    <li>
+                        22:30 | <span>24 Caprices, Op.1: No. 1 in E Major</span>
+                    </li>
+
+                </ul>
+            </div> <!-- .escenario -->
+
+
+        </div> <!-- .escenarios-contenedor -->
+
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galeria</h3>
+
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-crema">
+        <h3>Boletos</h3>
+
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 Dia</p>
+
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a Ambos Escenarios</li>
+                        <li>Comida y Bebidas</li>
+                        <li>Open Bar Stop 18:00</li>
+                    </ul>
+                </div>
+
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 Dia</p>
+
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a Ambos Escenarios</li>
+                        <li>Comida y Bebidas</li>
+                        <li>Camisa de la Orquesta</li>
+                        <li>Acceso VIP</li>
+                        <li>Open Bar</li>
+                    </ul>
+                </div>
+
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>© 2023 Rep. Dom. Orquesta Sinfonica ASC. Todos los derechos reservados <strong
+                style="text-decoration: underline;">David Fatule</strong></p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
+</body>
+
+</html>

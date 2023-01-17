@@ -1,0 +1,94 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+
+.lineup {
+
+    background-color: darkgray;
+    padding: 5rem 0;
+
+
+    h3, p {
+        text-align: center;
+        color: v.$marronoscuro;
+    }
+    .dia {
+        text-transform: uppercase;
+        margin: 5rem 0;
+    }
+ 
+}
+
+.cello .nombre-escenario:after{
+    background-image: url(../img/2iconocello.icon);
+}
+
+.violin .nombre-escenario:after {
+    background-image: url(../img/violinico.icon);
+}
+
+
+.escenarios-contenedor{
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+         
+        
+    }
+    
+
+    p {
+        color: v.$negro;
+    }   
+     .escenario {
+            padding-top: 2rem;
+            margin-top: 3rem;
+
+            
+    
+            .nombre-escenario {
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 20rem;
+                    height: 10rem;
+                    background-size: 10rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    margin: 2rem auto 0 auto;
+                }
+            }
+        }
+}
+
+.calendario {
+    @include m.resetear-lista;
+    li {
+        padding: 2.5rem;
+        font-weight: 700;
+
+        span{
+            font-weight: 400;
+        }
+    }
+}
+
+.bg-crema {
+    background-color: v.$crema;
+    border-radius: 1rem;
+
+    li:nth-child(odd) {
+        background-color: darken(v.$crema, 10%);
+    }
+}
+
+
+.bg-marron {
+    background-color: v.$marronclaro;
+    border-radius: 1rem;
+    
+
+    li:nth-child(odd) {
+            background-color: darken(v.$marronclaro, 10%);
+        }
+}
